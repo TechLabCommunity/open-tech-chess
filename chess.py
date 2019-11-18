@@ -29,5 +29,5 @@ class Chess:
     def __str__(self):
         s = "Pezzi sulla scacchiera : \n"
         for p in self.pieces:
-            s += f"{type(p)} : ({p.pos_in_x},{p.pos_in_y})\n"
+            s += str(p)+"\n"
         return s

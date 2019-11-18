@@ -28,6 +28,8 @@ from chess import Chess
 regina_1 = Queen('a', 3)
 alfiere = Bishop('g', 7)
 pedone = Pawn('g', 7)
+# questo è comodo. Può stampare a video perchè ha ereditato da ChessPiece __str__
+print(pedone)
 # regina_1.pos_queen()
 
 c = Chess()
@@ -36,4 +38,6 @@ c.set_piece(alfiere)
 c.set_piece(pedone) # alfiere sparisce perchè pedone prende il suo posto.
 print(c)
 
+
+# ricordati di fare gli unittest magari sulle classi...
 

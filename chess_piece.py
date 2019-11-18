@@ -5,3 +5,7 @@ class ChessPiece:
             raise ValueError(f"{x},{y} non sono coordinate valide.")
         self.pos_in_x = x
         self.pos_in_y = y
+
+    # è possibile stampare qualsiasi pezzo con "print" perchè viene ereditato.
+    def __str__(self):
+        return f'{type(self)} : {self.pos_in_x}, {self.pos_in_y}'
