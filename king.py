@@ -11,7 +11,7 @@ class King(ChessPiece):
     def __init__(self, pos_in_x, pos_in_y):
         super().__init__(pos_in_x, pos_in_y)
 
-    def pos_king(self):
+    def possible_poss(self):
         x, y = ord(self.pos_in_x), self.pos_in_y
         moves = list(product([x], [y - 1, y + 1])) + list(product([x - 1], [y - 1, y, y + 1])) \
                 + list(product([x + 1], [y - 1, y, y + 1]))

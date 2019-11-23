@@ -10,7 +10,7 @@ class Queen(Bishop):
     def actual_position(self):
         return self.pos_in_x, self.pos_in_y
 
-    def pos_queen(self):
+    def possible_poss(self):
         if self.pos_in_y not in Y or self.pos_in_x not in X:
             print("Non esiste x oppure y.")
 
@@ -23,5 +23,5 @@ class Queen(Bishop):
                     for element_y in Y:
                         if element_y != self.pos_in_y:
                             result_moves.append((self.pos_in_x, element_y))
-            return print(result_moves)
+            return result_moves
 

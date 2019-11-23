@@ -10,7 +10,7 @@ class Knight(ChessPiece):
     def __init__(self, pos_in_x, pos_in_y):
         super().__init__(pos_in_x, pos_in_y)
 
-    def pos_knight(self):
+    def possible_poss(self):
         if self.pos_in_x not in X or self.pos_in_y not in Y:
             return print("x o y non esiste")
         x, y = ord(self.pos_in_x), self.pos_in_y
