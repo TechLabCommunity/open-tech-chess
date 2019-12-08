@@ -35,4 +35,4 @@ class Pawn(ChessPiece):
             for x, y in moves:
                 if ord('a') <= x <= ord('h') and 1 <= y <= 8:
                     result_moves.append((chr(x), y))
-            return print(result_moves)
+            return result_moves

@@ -20,7 +20,7 @@ class Bishop(ChessPiece):
         for n in range(1, 9):
             if n <= 8:
                 count = 1
-                moves = list(product([x + count], [y + count]))
+                moves = list(product([x + 1], [y + count]))
                 for x, y in moves:
                     if ord('a') <= x <= ord('h') and 1 <= y <= 8:
                         finale_risult.append((chr(x), y))
@@ -56,7 +56,7 @@ class Bishop(ChessPiece):
                     finale_risult.append((chr(x), y))
             moves_3.clear()
 
-        return print(finale_risult)
+        return finale_risult
 
 
 

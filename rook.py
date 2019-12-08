@@ -23,7 +23,7 @@ class Rook(ChessPiece):
                     for element_y in Y:
                         if element_y != self.pos_in_y:
                             result_moves.append((self.pos_in_x, element_y))
-            return print(result_moves)
+            return result_moves
 
 
 

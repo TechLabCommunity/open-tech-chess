@@ -30,7 +30,7 @@ class Chess:
             s += str(p)+","
         return s
 
-    def move_piece(self, pezzo, x_stat, y_stat):# pezzo
+    def move_piece(self, pezzo, x_stat, y_stat):  # pezzo
         try_pos = x_stat, y_stat
         possibili = pezzo.possible_poss()
         if try_pos in possibili:
